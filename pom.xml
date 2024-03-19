@@ -43,6 +43,16 @@
 	</dependencyManagement>
 
 	<dependencies>
+    <dependency>
+		<groupId>io.pyroscope</groupId>
+		<artifactId>pyroscope-javaagent</artifactId>
+		<version>0.11.0</version> <!-- Sürüm numarasını güncel sürümle değiştirebilirsiniz -->
+	    </dependency>
+	    <dependency>
+		<groupId>io.pyroscope</groupId>
+		<artifactId>pyroscope-java</artifactId>
+		<version>0.11.0</version> <!-- Sürüm numarasını güncel sürümle değiştirebilirsiniz -->
+	    </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-freemarker</artifactId>
