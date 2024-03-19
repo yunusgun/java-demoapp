@@ -33,4 +33,4 @@ COPY --from=build /build/target/java-demoapp.jar .
 COPY --from=download /home/curl_user/opentelemetry-javaagent.jar /opentelemetry-javaagent.jar
 
 EXPOSE 8080
-ENTRYPOINT ["java","-javaagent:/opentelemetry-javaagent.jar", "-jar", "java-demoapp-${APP_VERSION}.jar"]
+ENTRYPOINT ["java","-javaagent:/opentelemetry-javaagent.jar", "-jar", "java-demoapp.jar"]
