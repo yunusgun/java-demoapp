@@ -17,6 +17,7 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -27,13 +28,20 @@
 				<scope>import</scope>
 			</dependency>
 			<dependency>
-			<groupId>io.pyroscope</groupId>
-			<artifactId>agent</artifactId>
-			<version>0.11.0</version>
+				<groupId>io.pyroscope</groupId>
+				<artifactId>agent</artifactId>
+				<version>0.11.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.azure.spring</groupId>
+				<artifactId>azure-spring-boot-bom</artifactId>
+				<version>3.2.0</version>
+				<type>pom</type>
+				<scope>import</scope>
 			</dependency>
 		</dependencies>
-
 	</dependencyManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -87,18 +95,6 @@
 			<artifactId>spring-boot-starter-oauth2-client</artifactId>
 		</dependency>
 	</dependencies>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>com.azure.spring</groupId>
-				<artifactId>azure-spring-boot-bom</artifactId>
-				<version>3.2.0</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 
 	<build>
 		<plugins>
