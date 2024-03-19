@@ -6,7 +6,19 @@ spring:
     suffix: .ftl
     settings:
       template_exception_handler: rethrow
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus, health, info, metric
+  health:
+    probes:
+      enabled: true
+    endpoint:
+      health:
+        show-details: always
+    prometheus:
+      enabled: true
 server:
   port: ${PORT:8080}
   tomcat:
